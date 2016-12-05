@@ -1,0 +1,56 @@
+body {
+	
+}
+
+ .mainPic {
+ 	opacity: .7;
+ } .mainPic:hover {
+ 	opacity: 1;
+ }
+
+.header {
+	position: relative;
+	height: 95vh;
+	width: 100%;
+	background-image: url("media/sf.jpg");
+	
+} 
+
+
+
+#headshot {
+	position: absolute;
+	height: 80vh;
+	bottom: 0;
+	text-align: left;
+	right: 0;
+	padding-right: 10px;
+}
+
+#headpic {
+	position: absolute;
+	height: 50%;
+	left: 25%;
+	float: right;
+	bottom: 0;
+	right: 0;
+	bottom: 500px;
+}
+
+#tech {
+	font-weight: bold;
+}
+
+.lazy {
+	position: relative;
+}
+
+h2 {
+	position: absolute;
+	top: 180px;
+	left: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
