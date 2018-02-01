@@ -30,7 +30,7 @@ function loadData() {
         $nytHeaderElem.text('New York Times Articles About ' + cityStr);
 
         articles = data.response.docs;
-        for (var i = 0; i < articles.length; i++){
+        for (var i = 0; i < articles.length-4; i++){
             var article = articles[i];
             $nytElem.append('<li class="article">' +
                 '<a href="' +article.web_url+'">' + article.headline.main+ '</a>' +
@@ -54,6 +54,7 @@ function loadData() {
         dataType: "jsonp",
         jsonp: "callback",
         success: function( response ) {
+
             var articleList = response[1];
 
             for (var i = 0; i < articleList.length; i++) {
